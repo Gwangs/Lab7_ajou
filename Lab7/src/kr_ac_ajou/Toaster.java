@@ -15,7 +15,7 @@ public class Toaster extends Product implements Cooker{
 
 	@Override
 	public String getName() {
-		return "ToasterH";
+		return "ToasterH~!~!~!";
 	}
 
 }
