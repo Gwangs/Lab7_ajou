@@ -1,6 +1,6 @@
 package kr_ac_ajou;
 
-public abstract class SmartTV extends product implements Networked {
+public abstract class SmartTV extends Product implements Networked {
 	private int channel;
 	
 	public int getchannel() {
