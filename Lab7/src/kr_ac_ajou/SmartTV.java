@@ -17,14 +17,15 @@ public abstract class SmartTV extends Product implements Networked {
 	}
 	
 	public boolean isConnected() {
-		
+		boolean Istrue;
+		return true;
 	}
 	
 	public double maxSpeed() {
-		
+		return 0;
 	}
 	
 	public String getName() {
-		
+		return "name";
 	}
 }
