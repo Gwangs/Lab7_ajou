@@ -1,5 +1,9 @@
 package kr_ac_ajou;
 
-public class Cooker {
+public interface Cooker {
+	
+	String prepareFood();
 
 }
+
+
