@@ -4,20 +4,25 @@ public class Laptop extends Product implements Networked{
 	private double totalCapacity;
 	private double usedCapacity;
 	
+	
 	public double getFreeCapacity(){
-		return;
+		return getFreeCapacity();
 	}
 	
 	public void format(){
-		
+		format();
 	}
 	
+	@Override
 	public boolean isConnected(){
-		
+		return isConnected();
 	}
 	
+	@Override
 	public double maxSpeed(){
-		
+
+		return maxSpeed();
+
 	}
 	
 	public double getTotalCapacity(){
@@ -33,10 +38,11 @@ public class Laptop extends Product implements Networked{
 	}
 	
 	public void setUsedCapacity(double usedCapacity){
-	if()	this.usedCapacity = usedCapacity;
+		this.usedCapacity = usedCapacity;
 	}
 	
+	@Override
 	public String getName(){
-		
+		return "Laptop name: "+getName();
 	}
 }
