@@ -32,7 +32,8 @@ public class Laptop extends Product implements DataStorage, Networked{
 		double ping = 0.007;
 		System.out.println("Internet Speed: " +max+ " Mbps");
 		System.out.println("Ping: " +ping+ " Seconds");
-		if(max > 30) {
+		
+			if(max > 30) {
 			System.out.println("Internet Speed Condition : OK");
 		}
 		if(max < 70) {
