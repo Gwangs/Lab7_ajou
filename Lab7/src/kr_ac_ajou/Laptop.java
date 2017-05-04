@@ -1,10 +1,11 @@
 package kr_ac_ajou;
 
-public class Laptop extends Product implements DataStorage, Networked{
+public class Laptop extends Product implements Networked, DataStorage {
 	private double totalCapacity;
 	private double usedCapacity;
 	
-	
+
+	@Override
 	public double getFreeCapacity(){
 		double freecapacity = totalCapacity - usedCapacity;
 		System.out.print("Free Capacity is ");
@@ -12,6 +13,7 @@ public class Laptop extends Product implements DataStorage, Networked{
 		return freecapacity;
 	}
 	
+	@Override
 	public void format(){
 		System.out.println("It's 15.6 inches wide.");
 	}
@@ -74,7 +76,7 @@ public class Laptop extends Product implements DataStorage, Networked{
 	
 	@Override
 	public String getName(){
-		System.out.println("Laptop name: Samsung vision wide");
-		return "laptop name: ";
+		
+		return "laptop name: Samsung";
 	}
 }

@@ -1,51 +1,35 @@
 package kr_ac_ajou;
 
-import java.util.Scanner;
 
 public class ProductTest {
 
-	public static void main(String[] args){
-		Scanner scan = new Scanner(System.in);
-		
+	public static void main(String[] args) {
+		Product lt = new Laptop();
+		Product st = new SmartTV();
+		Product t = new Toaster();
 		ProductTest pt = new ProductTest();
-		System.out.print("Type the Channel number. ");
-		int channel = scan.nextInt();
-		SmartTV smart = new SmartTV();
-		smart.getName();
-		smart.setchannel(channel);
-		smart.getchannel();
-		smart.isConnected();
-		smart.maxSpeed();
+		DataStorage l2 = new Laptop();
+		Networked l3 = new Laptop();
+		Networked st2 = new SmartTV();
+		Cooker ct = new Toaster();
 		
+		System.out.println(lt.getName());
+		System.out.println();
+		pt.testDataStorage(l2);
+		pt.testNetworked(l3);
 		
-		Laptop laptop = new Laptop();
-		double usedcap = 52.8;
-		double totalcap = 100.3;
-		laptop.getName();
-			
-		laptop.setUsedCapacity(usedcap);
-		laptop.setTotalCapacity(totalcap);
-		laptop.format();
-		laptop.isConnected();
-		laptop.maxSpeed();
-		
-
-		Toaster t = new Toaster(35.6);
-				
-		pt.testProduct(t);
-		pt.testCooker(t);
-		pt.testDataStorage(laptop);
-		scan.close();
-	}
-	//¿¹½Ã
-	public void testProduct(Product p){
-		System.out.println("price : "+p.getPrice());
-		System.out.println("Name : "+p.getName());
+		System.out.println(st.getName());
+		System.out.println();
+		pt.testNetworked(st2);
+		System.out.println();
+		System.out.println(t.getName());
+		System.out.println();
+		pt.testCooker(ct);
 	}
 	
 	
 	public void testDataStorage(DataStorage d) {
-		System.out.println("Free Capacity : " + d.getFreeCapacity());
+		System.out.println(d.getFreeCapacity());
 		d.format();
 	}
 
@@ -55,7 +39,7 @@ public class ProductTest {
 			System.out.println("Connection state : Not connnected");
 		} else {System.out.println("Connection state : Connnected");}
 		
-		System.out.println("Max Speed : " + n.maxSpeed() + "\n");
+		System.out.println("Max Speed : " + n.maxSpeed());
 	}
 
 	public void testCooker(Cooker c){

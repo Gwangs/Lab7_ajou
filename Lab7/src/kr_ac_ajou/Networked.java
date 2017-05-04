@@ -1,6 +1,6 @@
 package kr_ac_ajou;
 
 public interface Networked {
-	boolean isConnected();
-	double maxSpeed();
+	public boolean isConnected();
+	public double maxSpeed();
 }

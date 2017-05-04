@@ -14,7 +14,7 @@ public abstract class Product {
 		} else
 			this.price = price;
 	}
-
-	public abstract String getName();
-
+	abstract String getName();
 }
+
+
