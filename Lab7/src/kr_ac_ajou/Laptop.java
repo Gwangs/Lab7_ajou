@@ -6,7 +6,8 @@ public class Laptop extends Product implements Networked{
 	
 	
 	public double getFreeCapacity(){
-		return getFreeCapacity();
+		double freecapacity = totalCapacity - usedCapacity;
+		System.out.println("Free Capacity is "+freecapacity+ " Giga Bytes.");
 	}
 	
 	public void format(){
@@ -44,5 +45,10 @@ public class Laptop extends Product implements Networked{
 	@Override
 	public String getName(){
 		return "Laptop name: "+getName();
+	}
+	
+	public static void main(String args[]) {
+		Laptop laptop = new Laptop();
+		laptop.getFreeCapacity();
 	}
 }
