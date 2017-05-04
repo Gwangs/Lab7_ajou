@@ -1,5 +1,7 @@
 package kr_ac_ajou;
 
+import asfdsafs.Laptop;
+
 /*
 import test.Cooker;
 import test.Product;
@@ -9,7 +11,19 @@ import test.Toaster;
 public class ProductTest {
 
 	public static void main(String[] args){
-		//Laptop lap = new Laptop();
+		Laptop laptop = new Laptop();
+		double usedcap = 52.8;
+		double totalcap = 100.3;
+		laptop.getName();
+			
+		laptop.setUsedCapacity(usedcap);
+		laptop.setTotalCapacity(totalcap);
+		laptop.getFreeCapacity();
+		
+		laptop.format();
+		
+		laptop.isConnected();
+		laptop.maxSpeed();
 		
 		//예시 이렇게 하면 될것 같아요, setter에 가디언 붙여주세요(조건) 
 		//목요일 10시까지 마무리하는 걸로 하죠
@@ -37,6 +51,10 @@ public class ProductTest {
 		
 	}
 */
+	
+	public void testNetworked(Networked) {
+		
+	}
 
 	public static void testCooker(Cooker c){
 		System.out.println(c.prepareFood());
