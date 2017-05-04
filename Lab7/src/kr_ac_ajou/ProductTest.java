@@ -1,4 +1,6 @@
-package kr_ac_ajou;
+package asfdsafs;
+
+import java.util.Scanner;
 
 import asfdsafs.Laptop;
 
@@ -11,6 +13,19 @@ import test.Toaster;
 public class ProductTest {
 
 	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		
+		
+		System.out.print("Type the Channel number. ");
+		int channel = scan.nextInt();
+		SmartTV smart = new SmartTV();
+		smart.getName();
+		smart.setchannel(channel);
+		smart.getchannel();
+		smart.isConnected();
+		smart.maxSpeed();
+		
+		
 		Laptop laptop = new Laptop();
 		double usedcap = 52.8;
 		double totalcap = 100.3;
