@@ -37,7 +37,6 @@ public class ProductTest {
 		pt.testDataStorage(laptop);
 		scan.close();
 	}
-
 	public void testProduct(Product p){
 		System.out.println("price : "+p.getPrice());
 		System.out.println("Name : "+p.getName());
