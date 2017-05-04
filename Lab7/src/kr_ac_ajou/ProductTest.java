@@ -3,6 +3,7 @@ package asfdsafs;
 import java.util.Scanner;
 
 import asfdsafs.Laptop;
+import kr_ac_ajou.DataStorage;
 
 /*
 import test.Cooker;
@@ -33,7 +34,6 @@ public class ProductTest {
 			
 		laptop.setUsedCapacity(usedcap);
 		laptop.setTotalCapacity(totalcap);
-		laptop.getFreeCapacity();
 		
 		laptop.format();
 		
@@ -48,7 +48,8 @@ public class ProductTest {
 				
 		testProduct(t);
 		testCooker(t);
-
+		
+		testDataStorage(laptop);
 		
 	}
 	//¿¹½Ã
@@ -57,6 +58,10 @@ public class ProductTest {
 		System.out.println("Name : "+p.getName());
 	}
 	
+	
+	public static void testDataStorage(DataStorage d) {
+		System.out.println(d.getFreeCapacity());
+	}
 /*
 	public void testDadaStorage(DataStorage){
 		
@@ -66,10 +71,6 @@ public class ProductTest {
 		
 	}
 */
-	
-	public void testNetworked(Networked) {
-		
-	}
 
 	public static void testCooker(Cooker c){
 		System.out.println(c.prepareFood());

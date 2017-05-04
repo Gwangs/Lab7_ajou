@@ -1,13 +1,15 @@
 package kr_ac_ajou;
 
-public class Laptop extends Product implements Networked{
+public class Laptop extends Product implements DataStorage, Networked{
 	private double totalCapacity;
 	private double usedCapacity;
 	
 	
 	public double getFreeCapacity(){
 		double freecapacity = totalCapacity - usedCapacity;
-		System.out.println("Free Capacity is "+freecapacity+ " Giga Bytes.");
+		System.out.print("Free Capacity is ");
+		
+		return freecapacity;
 	}
 	
 	public void format(){
