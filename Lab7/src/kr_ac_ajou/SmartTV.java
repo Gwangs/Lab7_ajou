@@ -37,12 +37,14 @@ private int channel;
 		}
 	}
 	
+	@Override
 	public boolean isConnected() {
 		boolean Istrue = true;
 		System.out.println("Smart TV Internet Connection Condition : " +Istrue);
 		return true;
 	}
 	
+	@Override
 	public double maxSpeed() {
 		double max = 70.50;
 		double ping = 0.005;
@@ -65,6 +67,7 @@ private int channel;
 		return max;
 	}
 	
+	@Override
 	public String getName() {
 		System.out.println("Name of the Smart Television: LG SmartTV");
 		return "Smart TV";

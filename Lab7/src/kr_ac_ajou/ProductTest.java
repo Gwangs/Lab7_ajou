@@ -2,15 +2,6 @@ package kr_ac_ajou;
 
 import java.util.Scanner;
 
-import kr_ac_ajou.Laptop;
-import kr_ac_ajou.DataStorage;
-
-/*
-import test.Cooker;
-import test.Product;
-import test.Toaster;
-*/
-
 public class ProductTest {
 
 	public static void main(String[] args){
@@ -34,9 +25,7 @@ public class ProductTest {
 			
 		laptop.setUsedCapacity(usedcap);
 		laptop.setTotalCapacity(totalcap);
-		
 		laptop.format();
-		
 		laptop.isConnected();
 		laptop.maxSpeed();
 		
